@@ -4,4 +4,9 @@
     <string name="type_something">Type something</string>
     <string name="change_text">Change text</string>
     <string name="open_activity_and_change_text">Open activity and change text</string>
+    <string name="hint">Hint</string>
+    <string name="validate">Validate</string>
+    <string name="instructions">Instructions</string>
+    <string name="good_choice">Good choise</string>
+    <string name="bad_choice">Bad choise</string>
 </resources>

@@ -12,6 +12,11 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
+        testOptions {
+            unitTests {
+                includeAndroidResources = true
+            }
+        }
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -37,10 +42,18 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 
     //Test
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test:core-ktx:' + rootProject.coreVersion
-    androidTestImplementation 'androidx.test.ext:junit-ktx:' + rootProject.extJUnitVersion
-    androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion
+    androidTestImplementation 'androidx.test:core:' + rootProject.coreVersion;
+    androidTestImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion;
+    androidTestImplementation 'androidx.test:runner:' + rootProject.runnerVersion;
+    androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion;
+    androidTestImplementation 'org.robolectric:annotations:' + rootProject.robolectricVersion;
+
+    testImplementation 'androidx.test:core:' + rootProject.coreVersion;
+    testImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion;
+    testImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion;
+    testImplementation 'org.robolectric:robolectric:' + rootProject.robolectricVersion;
 }

@@ -14,16 +14,20 @@
         android:theme="@style/Theme.EspressoTest"
         tools:targetApi="31">
         <activity
-            android:name=".ShowTextActivity"
+            android:name=".basicexample.ShowTextActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+        <activity android:name=".custommatcher.SecondMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".basicexample.MainActivity"
+            android:exported="false">
+
         </activity>
     </application>
 
