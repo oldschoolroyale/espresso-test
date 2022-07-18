@@ -5,9 +5,12 @@
       <map>
         <entry key="app/src/main/res/drawable/correct.xml" value="0.2605" />
         <entry key="app/src/main/res/drawable/incorrect.xml" value="0.2605" />
+        <entry key="app/src/main/res/layout/activity_long_list.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/activity_second_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_show_text.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_sample.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/long_list_item.xml" value="0.25271739130434784" />
       </map>
     </option>
   </component>

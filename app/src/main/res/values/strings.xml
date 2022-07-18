@@ -9,4 +9,6 @@
     <string name="instructions">Instructions</string>
     <string name="good_choice">Good choise</string>
     <string name="bad_choice">Bad choise</string>
+    <string name="row_label">Lable</string>
+    <string name="hello_fragment">I am fragment</string>
 </resources>

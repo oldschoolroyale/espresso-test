@@ -21,6 +21,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
     buildTypes {
         release {
             minifyEnabled false
@@ -42,18 +43,28 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.annotation:annotation:' + rootProject.androidxAnnotationVersion;
+    implementation 'com.google.guava:guava:' + rootProject.guavaVersion
+    androidTestImplementation 'androidx.test.ext:junit-ktx:' + rootProject.extJUnitVersion
+    implementation 'androidx.fragment:fragment-ktx:' + rootProject.androidxFragmentVersion
 
-    //Test
-    androidTestImplementation 'androidx.test:core:' + rootProject.coreVersion;
-    androidTestImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion;
-    androidTestImplementation 'androidx.test:runner:' + rootProject.runnerVersion;
-    androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion;
-    androidTestImplementation 'org.robolectric:annotations:' + rootProject.robolectricVersion;
+    // TODO: ideally this would only be present in test scope
+    debugImplementation 'androidx.fragment:fragment-testing:' + rootProject.androidxFragmentVersion
+    debugImplementation 'androidx.test:core:' + rootProject.coreVersion
 
-    testImplementation 'androidx.test:core:' + rootProject.coreVersion;
-    testImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion;
-    testImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion;
-    testImplementation 'org.robolectric:robolectric:' + rootProject.robolectricVersion;
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.robolectric:robolectric:' + rootProject.robolectricVersion
+    testImplementation 'androidx.test:core:' + rootProject.coreVersion
+    testImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion
+    testImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion
+    testImplementation 'com.google.truth:truth:' + rootProject.truthVersion
+    testAnnotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
+
+    androidTestImplementation 'androidx.test:core:' + rootProject.coreVersion
+    androidTestImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion
+    androidTestImplementation 'androidx.test:runner:' + rootProject.runnerVersion
+    androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion
+    androidTestImplementation 'androidx.fragment:fragment-testing:' + rootProject.androidxFragmentVersion
+    androidTestImplementation 'com.google.truth:truth:' + rootProject.truthVersion
+    androidTestImplementation 'org.robolectric:annotations:' + rootProject.robolectricVersion
 }
